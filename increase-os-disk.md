@@ -68,7 +68,7 @@ When you increase the disk size of an Ubuntu OS disk in Azure, you might find th
 
 This process will make the newly allocated disk space available to your Ubuntu server. If you encounter any issues during these steps, ensure you have a backup of your data before proceeding, and consider consulting the Azure documentation or support for further assistance.
 
-Fired Commands
+***Fired Commands:***
 ```bash
 sudo apt-get install -y scsitools
 sudo rescan-scsi-bus
