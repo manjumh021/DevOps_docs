@@ -3,7 +3,7 @@
 ### Checklist
 
 1. **Create and Configure VM**
-   - Provision a VM in Azure and "don't forget to allow required ports in network settings".
+   - Provision a VM in Azure and **"don't forget to allow required ports in network settings(ex: 22, 80, 443)"**.
    - Install the required software (Nginx, OpenSSL).
    - Configure firewall settings to open necessary ports.
 
@@ -30,7 +30,7 @@
 1. **Provision a VM in Azure**:
    - Go to the Azure portal.
    - Create a new VM with your preferred settings (OS, size, region, etc.).
-   - don't forget to allow required ports in network settings
+   - **don't forget to allow required ports in network settings**
 
 2. **SSH into the VM**:
    ```sh
@@ -51,6 +51,8 @@
 5. **Configure Firewall Settings**:
    ```sh
    sudo ufw allow 'Nginx Full'
+   sudo ufw allow 443
+   sudo ufw status
    ```
 
 #### 2. Obtain SSL Certificates
